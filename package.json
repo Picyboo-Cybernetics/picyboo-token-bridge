@@ -1,0 +1,24 @@
+{
+  "name": "picyboo-token-bridge",
+  "version": "0.1.0",
+  "description": "PICYBOO\u00ae proof-of-concept token encoding bridge (hex/base58/base64).",
+  "bin": {
+    "pbbridge": "bin/cli.js"
+  },
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "picyboo",
+    "token",
+    "base58",
+    "base64",
+    "hex"
+  ],
+  "scripts": {
+    "start": "node bin/cli.js"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "bs58": "^6.0.0"
+  }
+}
