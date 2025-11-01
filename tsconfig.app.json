@@ -1,9 +1,10 @@
-// tsconfig.app.json
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "noEmit": true,
-    "rootDir": "."
+    "rootDir": ".",
+    "module": "node20",
+    "moduleResolution": "nodenext"
   },
   "include": ["src", "tests"],
   "exclude": ["**/*.config.ts", "dist", "node_modules"]
