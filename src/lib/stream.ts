@@ -1,4 +1,4 @@
-import { Transform, TransformCallback } from 'node:stream';
+import { Transform, type TransformCallback } from 'node:stream';
 import type { TokenEncoding } from './codec.js';
 import { decodeToken, encodeToken } from './codec.js';
 
