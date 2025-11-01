@@ -1,7 +1,7 @@
 {
   "name": "picyboo-token-bridge",
   "version": "0.2.0",
-  "description": "PICYBOO\u2122 reference token bridging toolbox with modular CLI and SDK.",
+  "description": "PICYBOO™ reference token bridging toolbox with modular CLI and SDK.",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -40,9 +40,9 @@
     "commander": "^12.1.0"
   },
   "devDependencies": {
-    "@types/node": "^20.12.7",
+    "@types/node": "^20.19.24",
     "rimraf": "^5.0.5",
-    "typescript": "^5.4.5",
+    "typescript": "^5.9.3",
     "vitest": "^1.4.0"
   }
 }

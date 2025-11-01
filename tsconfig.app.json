@@ -4,7 +4,11 @@
     "noEmit": true,
     "rootDir": ".",
     "module": "node20",
-    "moduleResolution": "nodenext"
+    "moduleResolution": "nodenext",
+    "resolveJsonModule": true,
+    "verbatimModuleSyntax": true,
+    "types": ["node"],
+    "lib": ["ES2023"]
   },
   "include": ["src", "tests"],
   "exclude": ["**/*.config.ts", "dist", "node_modules"]
