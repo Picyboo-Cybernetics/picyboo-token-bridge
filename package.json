@@ -20,7 +20,7 @@
   "scripts": {
     "build": "tsc --project tsconfig.json",
     "clean": "rimraf dist",
-    "lint": "tsc --noEmit",
+    "lint": "tsc -p tsconfig.app.json --noEmit",
     "start": "node dist/bin/cli.js",
     "test": "vitest run",
     "test:watch": "vitest"
