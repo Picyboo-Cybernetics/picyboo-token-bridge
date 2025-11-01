@@ -1,0 +1,16 @@
+---
+title: PICYBOO Token Bridge Reference Flow
+author: Picyboo Cybernetics Engineering Guild
+---
+flowchart TD
+  User[Integrator / Auditor]
+  CLI[CLI Commands]
+  SDK[SDK (codec/detect/security)]
+  Vault[Confidential Bridge Core]
+  Ledger[Partner Ledger]
+  User --> CLI
+  CLI --> SDK
+  SDK -->|Operational Signals| Vault
+  SDK -->|Checksums & Signatures| User
+  SDK -->|Encoded Tokens| Ledger
+  Vault -. proprietary protocol .- Ledger

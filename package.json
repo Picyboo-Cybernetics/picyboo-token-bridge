@@ -1,24 +1,48 @@
 {
   "name": "picyboo-token-bridge",
-  "version": "0.1.0",
-  "description": "PICYBOO\u00ae proof-of-concept token encoding bridge (hex/base58/base64).",
-  "bin": {
-    "pbbridge": "bin/cli.js"
-  },
+  "version": "0.2.0",
+  "description": "PICYBOO\u2122 reference token bridging toolbox with modular CLI and SDK.",
   "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "bin": {
+    "pbbridge": "dist/bin/cli.js"
+  },
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "clean": "rimraf dist",
+    "lint": "tsc --noEmit",
+    "start": "node dist/bin/cli.js",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
   "license": "MIT",
   "keywords": [
     "picyboo",
     "token",
+    "bridge",
     "base58",
     "base64",
-    "hex"
+    "hex",
+    "cli"
   ],
-  "scripts": {
-    "start": "node bin/cli.js"
-  },
   "dependencies": {
-    "commander": "^12.1.0",
-    "bs58": "^6.0.0"
+    "bs58": "^6.0.0",
+    "commander": "^12.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.4.5",
+    "vitest": "^1.4.0"
   }
 }
