@@ -97,4 +97,3 @@ const checksum = createChecksum(Buffer.from(converted, 'utf8'));
 
 ## Legal
 © Picyboo Cybernetics. MIT License. PICYBOO is a trademark of Picyboo Cybernetics Inc.
-
